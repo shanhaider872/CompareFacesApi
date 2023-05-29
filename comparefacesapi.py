@@ -1,3 +1,7 @@
+pip install flask
+pip install opencv-python-headless
+pip install numpy
+
 from flask import Flask, request, jsonify
 import cv2
 import numpy as np
