@@ -26,7 +26,7 @@ def compare_faces(image1, image2):
     else:
         return False
 
-@app.route('/compare_faces', methods=['POST'])
+@app.route('/compare_faces', methods=['GET', 'POST'])
 def perform_face_comparison():
     try:
         image1 = request.files.get('image1')
